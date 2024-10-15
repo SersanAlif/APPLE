@@ -1,0 +1,264 @@
+/* style.css */
+
+/* Gaya untuk hero section */
+#hero {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.hero-content h1 {
+	font-size: 56px;
+	line-height: 1.2;
+}
+
+.hero-content p {
+	font-size: 22px;
+}
+
+/* Warna untuk tombol dan link */
+.btn-danger {
+	background-color: #e0001a;
+	border: none;
+	padding: 10px 30px;
+	font-size: 18px;
+}
+
+/* Warna navbar dan link */
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .btn {
+	background-color: #007bff;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+/* Gaya untuk ikon samping */
+.side-icons ul {
+	list-style: none;
+	padding: 0;
+}
+
+.side-icons ul li {
+	margin-bottom: 20px;
+}
+
+.side-icons ul li img {
+	filter: brightness(0) invert(1); /* Warna putih pada ikon */
+	transition: all 0.3s;
+}
+
+.side-icons ul li:hover img {
+	transform: scale(1.1);
+}
+
+/* Gaya untuk footer */
+footer {
+	background-color: #000;
+	color: white;
+}
+
+footer p {
+	margin: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 50%;
+}
+
+.carousel-item {
+	transition: transform 0.8s ease-in-out;
+}
+
+.hero-content {
+	top: 25%;
+	left: 10%;
+	transform: translateY(-50%);
+}
+body {
+	padding-top: 80px; /* Sesuaikan nilai ini dengan tinggi navbar */
+}
+
+/* Pastikan navbar di atas elemen lain */
+.navbar {
+	z-index: 9999;
+}
+
+.navbar {
+	transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+	transform: translateY(0); /* Start position of the navbar */
+}
+
+.navbar-hidden {
+	transform: translateY(-100%); /* Hide the navbar */
+}
+
+#hero {
+	height: 100vh; /* Height for hero section */
+	background: url("images/Honda4.webp") center/cover no-repeat;
+}
+.news-events {
+	background-color: #f9f9f9;
+	padding: 40px 20px;
+}
+
+.news-events h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2.5rem;
+	color: #333;
+}
+
+.event-item {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h3 {
+	margin: 0 0 10px 0;
+	color: #d9534f;
+}
+
+.event-item p {
+	margin: 5px 0;
+	color: #555;
+}
+
+.motor-section {
+	background-color: #ddd;
+}
+.side-icons {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.icon-item {
+	border: 1px solid transparent; /* Set initial border to transparent */
+	transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+	transform: translateX(20px); /* Move item slightly to the right */
+	opacity: 0.8; /* Initial opacity */
+}
+
+.icon-item:hover {
+	border-color: #007bff; /* Border color on hover */
+	transform: translateX(0); /* Move item back to original position */
+	opacity: 1; /* Full opacity on hover */
+}
+
+.text-white {
+	color: white; /* Set text color to white */
+}
+.menu-item img {
+	max-width: 100%; /* Pastikan gambar tidak melebihi lebar kolom */
+	height: auto; /* Pertahankan rasio aspek gambar */
+	max-height: 300px; /* Batasi tinggi maksimum gambar agar tidak terlalu besar */
+	object-fit: cover; /* Potong gambar jika diperlukan untuk menyesuaikan ukuran */
+	margin: 0 auto; /* Pusatkan gambar secara horizontal */
+}
+.logo-responsive {
+	max-width: 100%; /* Memastikan lebar maksimal 100% dari container-nya */
+	height: auto; /* Mengatur tinggi secara otomatis berdasarkan aspek rasio */
+	max-height: 65px; /* Membatasi tinggi maksimum logo */
+}
+
+/* Penyesuaian lebih lanjut untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+	.logo-responsive {
+		max-height: 50px; /* Ukuran logo lebih kecil untuk tablet */
+	}
+}
+
+@media (max-width: 576px) {
+	.logo-responsive {
+		max-height: 40px; /* Ukuran logo lebih kecil untuk ponsel */
+	}
+}
+.video-section {
+	position: relative;
+	width: 100%;
+	height: 100vh; /* Menetapkan tinggi section sesuai dengan viewport */
+	overflow: hidden; /* Menghindari elemen video melampaui batas section */
+}
+
+.bg-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1; /* Memastikan video berada di belakang konten lainnya */
+	transform: translate(-50%, -50%); /* Memusatkan video */
+}
+.hero-section {
+	background-color: whitesmoke;
+	color: black;
+	padding: 50px 0;
+	text-align: center;
+	position: relative;
+}
+
+.hero-section img {
+	width: 100%; /* Memastikan gambar memenuhi lebar web */
+	height: auto; /* Memastikan rasio aspek tetap terjaga */
+	max-width: 1200px; /* Batas maksimum agar gambar tidak terlalu besar di layar lebar */
+	margin: 20px 0;
+}
+
+.hero-section h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.hero-section .btn-primary {
+	border: none;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	margin-top: 20px;
+}
+
+.hero-section p {
+	margin-top: 10px;
+	font-size: 1rem;
+	color: black;
+}
+.product-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.product-icons .product-item {
+	margin: 0 15px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+.product-icons .product-item:hover {
+	transform: scale(1.1);
+}
+.product-icons i {
+	font-size: 2rem;
+	margin-bottom: 5px;
+	display: block;
+}
+.product-icons span {
+	display: block;
+	font-size: 0.9rem;
+	color: #333;
+}
+.new-product {
+	color: red;
+	font-size: 0.75rem;
+}
+.navbar-lightgray {
+	background-color: #d3d3d3 !important; /* Light gray color */
+	color: #000;
+}
